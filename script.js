@@ -18,7 +18,6 @@ const play = () => {
             secondText.innerHTML = `${convertMsToMinutesSeconds(
                 millisecCounter
             )} : `;
-            // minuteText.innerHTML = `${getMinutesFromMilliseconds(millisecCounter)} : `;
             millisecCounter = millisecCounter + 81;
         }, 81);
         isPlay = true;
