@@ -1,4 +1,3 @@
-const minuteText = document.getElementById("minuteText");
 const secondText = document.getElementById("secondText");
 const millisecondText = document.getElementById("millisecondText");
 const btnReset = document.getElementById("btnReset");
@@ -32,10 +31,8 @@ const play = () => {
 const reset = () => {
     isPlay = false;
     btnPlay.innerHTML = "<h1>START</h1>";
-    btnReset.classList.add("display-none");
     millisecondText.innerHTML = " ";
     secondText.innerHTML = " ";
-    minuteText.innerHTML = " ";
     millisecCounter = 0;
     clearInterval(millisec);
 };
