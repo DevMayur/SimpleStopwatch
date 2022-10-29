@@ -11,8 +11,8 @@
 
 * {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-user-select: none;
@@ -42,7 +42,6 @@ body {
 
 .bottom-button {
     border-top: solid;
-    cursor: pointer;
 }
 
 .button-center:active {
@@ -72,7 +71,7 @@ body {
 
 .inner-container {
     margin: 0px auto;
-    margin-top: 25px;;
+    margin-top: 25px;
     width: 200px;
     height: 200px;
     background-color: var(--color-depth-full);
