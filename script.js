@@ -50,25 +50,9 @@ function getNormalizedMilliseconds(milliseconds) {
     }
 }
 
-function getSecondsFromMilliseconds(milliseconds) {
-    let result = (milliseconds / 100).toFixed();
-    if (result <= 9) {
-        return "0".concat(result);
-    } else {
-        return result;
-    }
-}
-
-function getMinutesFromMilliseconds(seconds) {
-    let result = (seconds / 6000).toFixed();
-    if (result <= 9) {
-        return "0".concat(result);
-    } else {
-        return result;
-    }
-}
 
 function convertMsToMinutesSeconds(milliseconds) {
+    //Math.floor will return rounded value to milliseconds / 600000 in terms of minutes
     const minutes = Math.floor(milliseconds / 60000);
     const seconds = Math.round((milliseconds % 60000) / 1000);
 
@@ -78,6 +62,7 @@ function convertMsToMinutesSeconds(milliseconds) {
 }
 
 function padTo2Digits(num) {
+    //padStart will make number of two digits
     return num.toString().padStart(2, "0");
 }
 
